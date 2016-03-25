@@ -43,7 +43,7 @@ const processors = [
 ]
 
 gulp.task('sass', () => {
-  return gulp.src(`${paths.files.scss.src}/*`)
+  return gulp.src(`${paths.files.scss.src}/*.scss`)
     .pipe(plumber({ errorHandler: onError }))
     .pipe(sass({ errLogToConsole: true }))
     .pipe(postcss(processors))
