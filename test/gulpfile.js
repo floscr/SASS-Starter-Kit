@@ -31,7 +31,7 @@ const onError = function(error) {
 
 // html
 gulp.task('templates', () => {
-  return gulp.src('./test.jade')
+  return gulp.src('./*.jade')
     .pipe(plumber({ errorHandler: onError }))
     .pipe(jade())
     .pipe(gulp.dest(paths.dst))
