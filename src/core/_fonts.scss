@@ -1,0 +1,15 @@
+/*--------------------------------------------------------*\
+ * Font Specific Variables
+ *--------------------------------------------------------*/
+
+$sans-serif-fallback: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif-fallback: "Georgia", Cambria, Times New Roman, Times, serif;
+
+$serif: $serif-fallback;
+$sans: $sans-serif-fallback;
+
+/*--------------------------------------------------------*\
+ * Font Assignments
+ *--------------------------------------------------------*/
+
+$primary-font: $sans;

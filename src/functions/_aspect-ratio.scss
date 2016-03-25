@@ -1,0 +1,40 @@
+/*-------------------------------------------------------*\
+ * Maintain aspect ration for an elemnt
+ * The mixin assumes you'll be nesting an element with the
+ * class of content inside your initial block. Like this:
+ *
+ * HTML:
+ * <div class="sixteen-to-nine-aspect-ratio">
+ *   <div>
+ *     <!-- Everything in here will maintain aspect ratio -->
+ *   </div>
+ * </div>
+ *
+ * SASS:
+ * .sixteen-to-nine-aspect-ratio {
+ *   @include aspect-ratio(16, 9);
+ * }
+ *--------------------------------------------------------*/
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .aspect-ratio-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@mixin reset-aspect-ratio() {
+  &:before {
+    content: none;
+  }
+}

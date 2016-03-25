@@ -1,0 +1,33 @@
+/*--------------------------------------------------------*\
+ * Breakpoint Mixin
+ *
+ * Maintainable breakpoints
+ *
+ * Useage:
+ * @include breakpoint(breakpoint)
+ *
+ * above:   min-width
+ *          Needs a minimum amount of px to trigger
+ * below:   max-width
+ *          Triggers after a maximum amount of px
+ * area:    Specific targeted area breakpoints
+ *--------------------------------------------------------*/
+
+// Keep the breakpoint variables here for easy maintainance
+$bp-page-wrap    : 960px;
+$bp-single-col   : 320px;
+
+@mixin breakpoint($point) {
+  @if $point == below-page-wrap {
+    @media screen and (max-width: $bp-page-wrap) { @content; }
+  }
+  @else if $point == above-page-wrap {
+    @media screen and (min-width: $bp-page-wrap) { @content; }
+  }
+  @else if $point == single-col {
+    @media screen and (max-width: $bp-single-col) { @content; }
+  }
+  @else if $point == above-single-col {
+    @media screen and (min-width: $bp-single-col) { @content; }
+  }
+}
