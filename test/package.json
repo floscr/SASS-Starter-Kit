@@ -1,0 +1,17 @@
+{
+  "name": "sass-starter-kit-tests",
+  "version": "1.0.0",
+  "description": "Test for this starter kit",
+  "author": "Florian Schrödl",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer":               "*",
+    "browser-sync":               "*",
+    "gulp":                       "*",
+    "gulp-jade":                       "*",
+    "gulp-plumber":               "*",
+    "gulp-postcss":               "*",
+    "gulp-sass":                  "*",
+    "node-notifier":              "*"
+  }
+}
