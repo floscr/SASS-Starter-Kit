@@ -11,8 +11,10 @@
 
 $z-index: (
   above-content: 10,
+  menu: 20,
   top: 100,
   modal: 110,
+  cookie-consent: 120,
 );
 
 @function z-index($key) {

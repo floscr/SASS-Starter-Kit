@@ -1,0 +1,25 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-size: #{$base-font-size}px;
+  font-family: $primary-font;
+  color: $text-color;
+}
+
+/*--------------------------------------------------------*\
+ * Helper Classes
+ *--------------------------------------------------------*/
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.break-word {
+  hyphens: auto;
+  word-break: break-all;
+  word-break: break-word;
+}

@@ -1,4 +1,14 @@
 /*--------------------------------------------------------*\
+ * Core Font Size
+ * This font size will determine the typography size of
+ * all elements on this page that use the em or rem function
+ * These functions can be found in:
+ * ../functions/_px-to-rem.scss
+ *--------------------------------------------------------*/
+
+$base-font-size: 16; // px
+
+/*--------------------------------------------------------*\
  * Paths
  * When the folder structure changes you can quickly adapt
  * the variables here.
@@ -6,5 +16,6 @@
  * background-image: url('#{$imgRoot}/my-image.png');
  *--------------------------------------------------------*/
 
-$imgRoot: '../img';
-$svgRoot: '../svg';
+$img-root: '../img';
+$svg-root: '../svg';
+$font-root: '../fonts';
