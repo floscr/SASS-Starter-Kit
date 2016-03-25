@@ -1,0 +1,24 @@
+/*-------------------------------------------------------*\
+ * Always put your z-index variables here!
+ * Otherwise you will have no overview of all the z-index
+ * values that are scattered through the documents
+ * Try to keep the z-index in +-10 value steps and don't go
+ * crazy with 99999 values
+ *
+ * Useage:
+ * z-index: z-index('modal');
+ *--------------------------------------------------------*/
+
+$z-index: (
+  above-content: 10,
+  top: 100,
+  modal: 110,
+);
+
+@function z-index($key) {
+  @if map-has-key($z-index, $key) {
+    @return map-get($z-index, $key);
+  }
+  @warn "Unknown `#{$key}` in $z-layers.";
+  @return null;
+}

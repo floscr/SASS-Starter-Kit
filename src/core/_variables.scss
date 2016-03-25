@@ -1,0 +1,10 @@
+/*--------------------------------------------------------*\
+ * Paths
+ * When the folder structure changes you can quickly adapt
+ * the variables here.
+ * USEAGE:
+ * background-image: url('#{$imgRoot}/my-image.png');
+ *--------------------------------------------------------*/
+
+$imgRoot: '../img';
+$svgRoot: '../svg';
