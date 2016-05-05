@@ -11,8 +11,9 @@
  * Functions & Mixins
  *--------------------------------------------------------*/
 
+@import "functions/utils";
 @import "functions/breakpoints";
-@import 'functions/clearfix';
+@import "functions/clearfix";
 @import "functions/px-to-rem";
 @import "functions/aspect-ratio";
 

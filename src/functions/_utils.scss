@@ -1,0 +1,7 @@
+@function get-key-from-array($arr, $key) {
+  @if map-has-key($arr, $key) {
+    @return map-get($arr, $key);
+  }
+  @warn "Unknown `#{$key}` in `#{$arr}`.";
+  @return null;
+}
