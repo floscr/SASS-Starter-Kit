@@ -1,3 +1,13 @@
+/**
+ * Return a key from an array.
+ * If the key doesnt exist throw an error.
+ * @warn is not yet included in libsass.
+ * Example:
+ * $my-array: (
+ *   'key',
+ * );
+ * get-key-from-array($my-array, 'key');
+ */
 @function get-key-from-array($arr, $key) {
   @if map-has-key($arr, $key) {
     @return map-get($arr, $key);
