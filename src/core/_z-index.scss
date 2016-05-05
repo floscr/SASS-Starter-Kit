@@ -17,6 +17,6 @@ $z-index: (
   cookie-consent: 120,
 );
 
-@function get-key-from-array($key) {
-  @return get-key($z-index, $key);
+@function z-index($key) {
+  @return get-key-from-array($z-index, $key);
 }
