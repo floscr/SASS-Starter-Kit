@@ -48,6 +48,7 @@ gulp.task('sass', () => {
     .pipe(sass({ errLogToConsole: true }))
     .pipe(postcss(processors))
     .pipe(gulp.dest(paths.files.scss.dst))
+    .pipe(sync.stream())
 })
 
 // server
@@ -63,7 +64,7 @@ gulp.task('server', () => sync(options))
 // watch
 gulp.task('watch', () => {
   gulp.watch('./*.jade', ['templates', reload])
-  gulp.watch([`${paths.files.scss.src}/**/**`, '../src/**/**/**/**'], ['sass', reload])
+  gulp.watch([`${paths.files.scss.src}/**/**`, '../src/**/**/**/**'], ['sass'])
 })
 
 // build and default tasks
