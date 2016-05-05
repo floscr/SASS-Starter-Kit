@@ -63,7 +63,7 @@ gulp.task('server', () => sync(options))
 // watch
 gulp.task('watch', () => {
   gulp.watch('./*.jade', ['templates', reload])
-  gulp.watch(`${paths.files.scss.src}/**/**/**/**`, ['sass', reload])
+  gulp.watch([`${paths.files.scss.src}/**/**`, '../src/**/**/**/**'], ['sass', reload])
 })
 
 // build and default tasks
