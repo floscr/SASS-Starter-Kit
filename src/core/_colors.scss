@@ -7,7 +7,7 @@ $green: #54af31;
 $red: #DA0000;
 
 // $blue: #4175B6;
-$blue-base: #E93F3B;
+$blue-base: adjust-hue( #E93F3B, 570% );
 $blue: (
   default: $blue-base,
   100: adjust-hue(mix(white, lighten($blue-base, 35%), 50%), -8%),
@@ -18,7 +18,7 @@ $blue: (
   600: adjust-hue(saturate(darken($blue-base, 8%), 5%), 2%),
   700: adjust-hue(saturate(darken($blue-base, 13%), 10%), 6%),
   800: adjust-hue(saturate(darken($blue-base, 20%), 15%), 8%),
-  900: adjust-hue(saturate(darken($blue-base, 25%), 20%), 10%),
+  900: adjust-hue(saturate(darken($blue-base, 28%), 20%), 10%),
 );
 
 $black: #161617;
