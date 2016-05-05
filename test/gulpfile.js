@@ -13,8 +13,8 @@ let paths = {
   dst: './dst',
   files: {
     scss: {
-      src: '../src/',
-      dst: './dst',
+      src: './src/scss',
+      dst: './dst/assets/css',
     },
   },
 }
@@ -47,7 +47,7 @@ gulp.task('sass', () => {
     .pipe(plumber({ errorHandler: onError }))
     .pipe(sass({ errLogToConsole: true }))
     .pipe(postcss(processors))
-    .pipe(gulp.dest(paths.dst))
+    .pipe(gulp.dest(paths.files.scss.dst))
 })
 
 // server
