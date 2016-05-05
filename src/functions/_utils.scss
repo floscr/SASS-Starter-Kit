@@ -15,3 +15,24 @@
   @warn "Unknown `#{$key}` in `#{$arr}`.";
   @return null;
 }
+
+/**
+ * Return a key from an array.
+ * If the key doesnt exist try the default key,
+ * otherwise throw an error.
+ * @warn is not yet included in libsass.
+ * Example:
+ * $my-array: (
+ *   'key',
+ * );
+ * get-key-from-array($my-array, 'key');
+ */
+@function get-key-or-default($arr, $key) {
+  @if map-has-key($arr, $key) {
+    @return map-get($arr, $key);
+  } @else {
+    @return map-get($arr, 'default');
+  }
+  @warn "Unknown `#{$key}` in `#{$arr}`.";
+  @return null;
+}
