@@ -22,7 +22,7 @@
   .colortable__blue__#{$index} {
     @if $index != "default" {
       @if $index <= 300 {
-        color: black;
+        color: $black;
       }
     }
     background-color: map-get($blue, $index);
