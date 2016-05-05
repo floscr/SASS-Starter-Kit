@@ -1,13 +1,13 @@
 /*-------------------------------------------------------*\
 * PX to EM
 * Converts px units to em based on the browser context size
-* $base-font-size can be found in src/core/variables
+* $font-base-size can be found in src/core/variables
 * Useage:
 * font-size: em(16px)
 * font-size: rem(16px)
 \*-------------------------------------------------------*/
 
-@function em($pixels, $context: $base-font-size) {
+@function em($pixels, $context: $font-base-size) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
   }
@@ -19,7 +19,7 @@
   @return $pixels / $context * 1em;
 }
 
-@function rem($pixels, $context: $base-font-size) {
+@function rem($pixels, $context: $font-base-size) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
   }
