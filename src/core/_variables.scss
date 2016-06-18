@@ -6,7 +6,7 @@
  * ../functions/_px-to-rem.scss
  *--------------------------------------------------------*/
 
-$font-base-size: 16; // px
+$font-base-size: 16px;
 
 /*--------------------------------------------------------*\
  * Paths
@@ -17,3 +17,21 @@ $font-base-size: 16; // px
 $img-root: '../img';
 $svg-root: '../svg';
 $font-root: '../fonts';
+
+/*--------------------------------------------------------*\
+ * Layout
+ *--------------------------------------------------------*/
+
+// The maximum page width of all content
+$layout-fullpage-width: 1090px;
+$layout-max-page-width: 1420px;
+
+$mobile-side-padding: 7%;
+
+/*--------------------------------------------------------*\
+ * Animation
+ *--------------------------------------------------------*/
+
+// Custom easings
+// https://matthewlein.com/ceaser/
+$ease-fast-in-out: cubic-bezier(0.835, 0.010, 0.220, 1.000);

@@ -1,0 +1,13 @@
+/*--------------------------------------------------------*\
+ * Helper Classes
+ *--------------------------------------------------------*/
+
+.type--uppercase {
+  text-transform: uppercase;
+}
+
+.type--break_word {
+  hyphens: auto;
+  word-break: break-all;
+  word-break: break-word;
+}

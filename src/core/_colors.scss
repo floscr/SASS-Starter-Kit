@@ -6,16 +6,39 @@
 $green: #54af31;
 $red: #DA0000;
 
-$black: #161617;
-$grey: #B9C5BC;
+// Black & White
+$white: white;
+$black: #454545;
+
+// Grey Shades
+$grey-05: #ACACAB;
+$grey-10: #E7E7EB;
+$grey-20: #EEEEEE;
+$grey-30: #DDDDDD;
+$grey-50: #747474;
+$grey-50: #949494;
+$grey-70: #595959;
+$grey-80: #332F2D;
+$grey-90: #454545;
 
 /*--------------------------------------------------------*\
  * Access Variables
  *--------------------------------------------------------*/
 
-$primary: $green;
-$secondary: darken($primary, 10%);
+$color-primary: $green;
+$color-secondary: darken($color-primary, 10%);
 
-$text-color: $black;
+$color-headline:  $color-primary;
+$color-text:      $grey-70;
+$color-hr:        $grey-30;
+$color-border:    $grey-30;
 
-$alert: $red;
+$color-link: $color-primary;
+$color-link-hover: darken($color-primary, 20%);
+
+// -------
+// BUTTONS
+// -------
+
+$color-btn-text-default:  $white;
+$color-btn-bg-default:    $color-primary;
