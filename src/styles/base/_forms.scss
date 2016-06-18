@@ -1,0 +1,5 @@
+// Set the font-family for placeholders for all browsers
+::-webkit-input-placeholder { font-family: $font-primary }
+::-moz-placeholder { font-family: $font-primary } /* firefox 19+ */
+:-ms-input-placeholder { font-family: $font-primary } /* ie */
+input:-moz-placeholder { font-family: $font-primary }
