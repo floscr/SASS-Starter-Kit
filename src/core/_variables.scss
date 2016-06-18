@@ -9,6 +9,16 @@
 $font-base-size: 16px;
 
 /*--------------------------------------------------------*\
+ * Paths
+ * When the folder structure changes you can quickly adapt
+ * the variables here.
+\*--------------------------------------------------------*/
+
+$img-root: '../img';
+$svg-root: '../svg';
+$font-root: '../fonts';
+
+/*--------------------------------------------------------*\
  * Layout
  *--------------------------------------------------------*/
 
@@ -25,13 +35,3 @@ $mobile-side-padding: 7%;
 // Custom easings
 // https://matthewlein.com/ceaser/
 $ease-fast-in-out: cubic-bezier(0.835, 0.010, 0.220, 1.000);
-
-/*--------------------------------------------------------*\
- * Paths
- * When the folder structure changes you can quickly adapt
- * the variables here.
-\*--------------------------------------------------------*/
-
-$img-root: '../img';
-$svg-root: '../svg';
-$font-root: '../fonts';
